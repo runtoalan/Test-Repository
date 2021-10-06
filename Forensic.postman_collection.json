@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "4d3ab835-bfed-4523-b284-c2a9beac0345",
+		"name": "Forensic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Forensic: Directions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/:emailId/directions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						":emailId",
+						"directions"
+					],
+					"variable": [
+						{
+							"key": "emailId",
+							"value": "mac@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forensic: Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/:emailId/location/:x/:y",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						":emailId",
+						"location",
+						":x",
+						":y"
+					],
+					"variable": [
+						{
+							"key": "emailId",
+							"value": "mac1@gmail.com"
+						},
+						{
+							"key": "x",
+							"value": "55.99"
+						},
+						{
+							"key": "y",
+							"value": "-104.67"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
